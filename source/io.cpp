@@ -9,8 +9,10 @@ void greeting(void)
     printf(" # This program solves quadratic equations. (2022) \n");
 }
 
-void clean_buffer(int ch)
+void clean_buffer(void)
 {
+    int ch;
+    
     while ((ch = getchar()) != '\n') { }
 }
 
@@ -39,7 +41,7 @@ void guarded_input(double *a, double *b, double *c)
         while (scanf("%lg %lg %lg", a, b, c) != input_scanf_return)
         {
             // if input error line skips
-            clean_buffer(ch);
+            clean_buffer();
 
             printf(" # Input error, try again: \n");
         }
@@ -88,5 +90,4 @@ void print_solution(Num_Roots num_roots, double x1, double x2)
             printf(" # print_solution(): ERROR: sol_numb = %d. \n", num_roots);
             break;
     }
-
 }
