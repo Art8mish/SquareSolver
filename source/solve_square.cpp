@@ -75,7 +75,7 @@ Num_Roots solve_square(double a, double b, double c, double *x1, double *x2)
     }
 }
 
-void is_solution_minus_zero(double *x1, double *x2)
+void removal_minus_zero(double *x1, double *x2)
 {
     *x1 = (is_zero(fabs(*x1))) ? 0 : *x1;
     *x2 = (is_zero(fabs(*x2))) ? 0 : *x2;
