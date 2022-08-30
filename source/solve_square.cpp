@@ -8,6 +8,12 @@ int is_zero(double value)
     return (fabs(value) < EPS); // comparison of absolute value with small constant
 }
 
+void removal_minus_zero(double *x1, double *x2)
+{
+    *x1 = (is_zero(fabs(*x1))) ? 0 : *x1;
+    *x2 = (is_zero(fabs(*x2))) ? 0 : *x2;
+}
+
 Num_Roots solve_linear(double b, double c, double *x1)
 {
     SOFT_ASSERT(std::isfinite(b));
@@ -73,10 +79,4 @@ Num_Roots solve_square(double a, double b, double c, double *x1, double *x2)
 
         return TWO_SOL;
     }
-}
-
-void removal_minus_zero(double *x1, double *x2)
-{
-    *x1 = (is_zero(fabs(*x1))) ? 0 : *x1;
-    *x2 = (is_zero(fabs(*x2))) ? 0 : *x2;
 }
