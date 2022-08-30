@@ -1,0 +1,130 @@
+\hypertarget{solve__square_8h}{}\doxysection{include/solve\+\_\+square.h File Reference}
+\label{solve__square_8h}\index{include/solve\_square.h@{include/solve\_square.h}}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{solve__square_8h_a5f1bc833b90b111d3ff80955ad6bf1e7}{Num\+\_\+\+Roots}} \{ \mbox{\hyperlink{solve__square_8h_a5f1bc833b90b111d3ff80955ad6bf1e7a744065c64f7cd30f69ed5c8e7a61babf}{NO\+\_\+\+SOL}} = 0
+, \mbox{\hyperlink{solve__square_8h_a5f1bc833b90b111d3ff80955ad6bf1e7a9975cac25be5c19ebc100ebc58e67004}{ONE\+\_\+\+SOL}} = 1
+, \mbox{\hyperlink{solve__square_8h_a5f1bc833b90b111d3ff80955ad6bf1e7a681db2e870834d62487cf322aacd31ac}{TWO\+\_\+\+SOL}} = 2
+, \mbox{\hyperlink{solve__square_8h_a5f1bc833b90b111d3ff80955ad6bf1e7af3e6fa9925576441c12b61696459de11}{INF\+\_\+\+SOL}} = -\/1
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{solve__square_8h_a5f1bc833b90b111d3ff80955ad6bf1e7}{Num\+\_\+\+Roots}} \mbox{\hyperlink{solve__square_8h_a5ad29eb3936abbcae50fd9a6a6faaf7f}{solve\+\_\+square}} (double a, double b, double c, double $\ast$x1, double $\ast$x2)
+\item 
+\mbox{\hyperlink{solve__square_8h_a5f1bc833b90b111d3ff80955ad6bf1e7}{Num\+\_\+\+Roots}} \mbox{\hyperlink{solve__square_8h_afa659da84cfcbc402b0382ddc81df1e9}{solve\+\_\+linear}} (double b, double c, double $\ast$x1)
+\item 
+int \mbox{\hyperlink{solve__square_8h_ab00d912be3ba37c91acb349ae26da7f4}{is\+\_\+zero}} (double value)
+\item 
+void \mbox{\hyperlink{solve__square_8h_a53b5840fb62e7bd74b57562c92dae86e}{is\+\_\+solution\+\_\+minus\+\_\+zero}} (double $\ast$x1, double $\ast$x2)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{solve__square_8h_a5f1bc833b90b111d3ff80955ad6bf1e7}\label{solve__square_8h_a5f1bc833b90b111d3ff80955ad6bf1e7}} 
+\index{solve\_square.h@{solve\_square.h}!Num\_Roots@{Num\_Roots}}
+\index{Num\_Roots@{Num\_Roots}!solve\_square.h@{solve\_square.h}}
+\doxysubsubsection{\texorpdfstring{Num\_Roots}{Num\_Roots}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{solve__square_8h_a5f1bc833b90b111d3ff80955ad6bf1e7}{Num\+\_\+\+Roots}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NO\_SOL@{NO\_SOL}!solve\_square.h@{solve\_square.h}}\index{solve\_square.h@{solve\_square.h}!NO\_SOL@{NO\_SOL}}}\mbox{\Hypertarget{solve__square_8h_a5f1bc833b90b111d3ff80955ad6bf1e7a744065c64f7cd30f69ed5c8e7a61babf}\label{solve__square_8h_a5f1bc833b90b111d3ff80955ad6bf1e7a744065c64f7cd30f69ed5c8e7a61babf}} 
+NO\+\_\+\+SOL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ONE\_SOL@{ONE\_SOL}!solve\_square.h@{solve\_square.h}}\index{solve\_square.h@{solve\_square.h}!ONE\_SOL@{ONE\_SOL}}}\mbox{\Hypertarget{solve__square_8h_a5f1bc833b90b111d3ff80955ad6bf1e7a9975cac25be5c19ebc100ebc58e67004}\label{solve__square_8h_a5f1bc833b90b111d3ff80955ad6bf1e7a9975cac25be5c19ebc100ebc58e67004}} 
+ONE\+\_\+\+SOL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TWO\_SOL@{TWO\_SOL}!solve\_square.h@{solve\_square.h}}\index{solve\_square.h@{solve\_square.h}!TWO\_SOL@{TWO\_SOL}}}\mbox{\Hypertarget{solve__square_8h_a5f1bc833b90b111d3ff80955ad6bf1e7a681db2e870834d62487cf322aacd31ac}\label{solve__square_8h_a5f1bc833b90b111d3ff80955ad6bf1e7a681db2e870834d62487cf322aacd31ac}} 
+TWO\+\_\+\+SOL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INF\_SOL@{INF\_SOL}!solve\_square.h@{solve\_square.h}}\index{solve\_square.h@{solve\_square.h}!INF\_SOL@{INF\_SOL}}}\mbox{\Hypertarget{solve__square_8h_a5f1bc833b90b111d3ff80955ad6bf1e7af3e6fa9925576441c12b61696459de11}\label{solve__square_8h_a5f1bc833b90b111d3ff80955ad6bf1e7af3e6fa9925576441c12b61696459de11}} 
+INF\+\_\+\+SOL&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 4 of file solve\+\_\+square.\+h.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{solve__square_8h_a53b5840fb62e7bd74b57562c92dae86e}\label{solve__square_8h_a53b5840fb62e7bd74b57562c92dae86e}} 
+\index{solve\_square.h@{solve\_square.h}!is\_solution\_minus\_zero@{is\_solution\_minus\_zero}}
+\index{is\_solution\_minus\_zero@{is\_solution\_minus\_zero}!solve\_square.h@{solve\_square.h}}
+\doxysubsubsection{\texorpdfstring{is\_solution\_minus\_zero()}{is\_solution\_minus\_zero()}}
+{\footnotesize\ttfamily void is\+\_\+solution\+\_\+minus\+\_\+zero (\begin{DoxyParamCaption}\item[{double $\ast$}]{x1,  }\item[{double $\ast$}]{x2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 78 of file solve\+\_\+square.\+cpp.
+
+\mbox{\Hypertarget{solve__square_8h_ab00d912be3ba37c91acb349ae26da7f4}\label{solve__square_8h_ab00d912be3ba37c91acb349ae26da7f4}} 
+\index{solve\_square.h@{solve\_square.h}!is\_zero@{is\_zero}}
+\index{is\_zero@{is\_zero}!solve\_square.h@{solve\_square.h}}
+\doxysubsubsection{\texorpdfstring{is\_zero()}{is\_zero()}}
+{\footnotesize\ttfamily int is\+\_\+zero (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})}
+
+Compares double with 0
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value} & Double argument\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if (value == 0) and False if not
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+If (value is very close to 0) True 
+\end{DoxyNote}
+
+
+Definition at line 5 of file solve\+\_\+square.\+cpp.
+
+\mbox{\Hypertarget{solve__square_8h_afa659da84cfcbc402b0382ddc81df1e9}\label{solve__square_8h_afa659da84cfcbc402b0382ddc81df1e9}} 
+\index{solve\_square.h@{solve\_square.h}!solve\_linear@{solve\_linear}}
+\index{solve\_linear@{solve\_linear}!solve\_square.h@{solve\_square.h}}
+\doxysubsubsection{\texorpdfstring{solve\_linear()}{solve\_linear()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{solve__square_8h_a5f1bc833b90b111d3ff80955ad6bf1e7}{Num\+\_\+\+Roots}} solve\+\_\+linear (\begin{DoxyParamCaption}\item[{double}]{b,  }\item[{double}]{c,  }\item[{double $\ast$}]{x1 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 11 of file solve\+\_\+square.\+cpp.
+
+\mbox{\Hypertarget{solve__square_8h_a5ad29eb3936abbcae50fd9a6a6faaf7f}\label{solve__square_8h_a5ad29eb3936abbcae50fd9a6a6faaf7f}} 
+\index{solve\_square.h@{solve\_square.h}!solve\_square@{solve\_square}}
+\index{solve\_square@{solve\_square}!solve\_square.h@{solve\_square.h}}
+\doxysubsubsection{\texorpdfstring{solve\_square()}{solve\_square()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{solve__square_8h_a5f1bc833b90b111d3ff80955ad6bf1e7}{Num\+\_\+\+Roots}} solve\+\_\+square (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b,  }\item[{double}]{c,  }\item[{double $\ast$}]{x1,  }\item[{double $\ast$}]{x2 }\end{DoxyParamCaption})}
+
+Solve a square equation ax2 + bx + c = 0
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a} & a-\/coefficient \\
+\hline
+\mbox{\texttt{ in}}  & {\em b} & b-\/coefficient \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & c-\/coefficient\\
+\hline
+\mbox{\texttt{ out}}  & {\em x1} & Pointer to the 1st root \\
+\hline
+\mbox{\texttt{ out}}  & {\em x2} & Pointer to the 2nd root\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Quantity of solution
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Return (-\/1) if infinity quantity of solutions 
+\end{DoxyNote}
+
+
+Definition at line 38 of file solve\+\_\+square.\+cpp.
+

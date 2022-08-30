@@ -1,0 +1,36 @@
+\hypertarget{common__library_8h}{}\doxysection{include/common\+\_\+library.h File Reference}
+\label{common__library_8h}\index{include/common\_library.h@{include/common\_library.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$TXlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{common__library_8h_a654a682cd728e4926b7fbe94e85e7094}{SOFT\+\_\+\+ASSERT}}(condition)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{common__library_8h_a654a682cd728e4926b7fbe94e85e7094}\label{common__library_8h_a654a682cd728e4926b7fbe94e85e7094}} 
+\index{common\_library.h@{common\_library.h}!SOFT\_ASSERT@{SOFT\_ASSERT}}
+\index{SOFT\_ASSERT@{SOFT\_ASSERT}!common\_library.h@{common\_library.h}}
+\doxysubsubsection{\texorpdfstring{SOFT\_ASSERT}{SOFT\_ASSERT}}
+{\footnotesize\ttfamily \#define SOFT\+\_\+\+ASSERT(\begin{DoxyParamCaption}\item[{}]{condition }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{            \textcolor{keywordflow}{do}                                                            \(\backslash\)}
+\DoxyCodeLine{            \{                                                             \(\backslash\)}
+\DoxyCodeLine{                if (!(condition))                                         \(\backslash\)}
+\DoxyCodeLine{                    printf(\textcolor{stringliteral}{"{}Error in \%s; file: \%s; num of line: \%d \(\backslash\)n"{}},   \(\backslash\)}
+\DoxyCodeLine{                           \#condition, \_\_FILE\_\_, \_\_LINE\_\_);               \(\backslash\)}
+\DoxyCodeLine{            \} \textcolor{keywordflow}{while}(\textcolor{keyword}{false});}
+
+\end{DoxyCode}
+
+
+Definition at line 11 of file common\+\_\+library.\+h.
+

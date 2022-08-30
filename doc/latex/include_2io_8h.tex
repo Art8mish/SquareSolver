@@ -1,0 +1,72 @@
+\hypertarget{include_2io_8h}{}\doxysection{include/io.h File Reference}
+\label{include_2io_8h}\index{include/io.h@{include/io.h}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{include_2io_8h_a645b7d6d939a966bb49276bb87285fd7}{guarded\+\_\+input}} (double $\ast$a, double $\ast$b, double $\ast$c)
+\item 
+void \mbox{\hyperlink{include_2io_8h_a2b7f0a41a1147900627061c670cfbebf}{print\+\_\+solution}} (\mbox{\hyperlink{common__library_8h_a5f1bc833b90b111d3ff80955ad6bf1e7}{Num\+\_\+\+Roots}} num\+\_\+roots, double x1, double x2)
+\item 
+void \mbox{\hyperlink{include_2io_8h_a979e020415f037fa346b2373956ea5b9}{greeting}} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{include_2io_8h_a979e020415f037fa346b2373956ea5b9}\label{include_2io_8h_a979e020415f037fa346b2373956ea5b9}} 
+\index{io.h@{io.h}!greeting@{greeting}}
+\index{greeting@{greeting}!io.h@{io.h}}
+\doxysubsubsection{\texorpdfstring{greeting()}{greeting()}}
+{\footnotesize\ttfamily void greeting (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 6 of file io.\+cpp.
+
+\mbox{\Hypertarget{include_2io_8h_a645b7d6d939a966bb49276bb87285fd7}\label{include_2io_8h_a645b7d6d939a966bb49276bb87285fd7}} 
+\index{io.h@{io.h}!guarded\_input@{guarded\_input}}
+\index{guarded\_input@{guarded\_input}!io.h@{io.h}}
+\doxysubsubsection{\texorpdfstring{guarded\_input()}{guarded\_input()}}
+{\footnotesize\ttfamily void guarded\+\_\+input (\begin{DoxyParamCaption}\item[{double $\ast$}]{a,  }\item[{double $\ast$}]{b,  }\item[{double $\ast$}]{c }\end{DoxyParamCaption})}
+
+Read coefficients for a square equation ax2 + bx + c = 0
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em a} & Pointer to the a-\/coefficient \\
+\hline
+\mbox{\texttt{ out}}  & {\em b} & Pointer to the b-\/coefficient \\
+\hline
+\mbox{\texttt{ out}}  & {\em c} & Pointer to the c-\/coefficient\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Program doesn\textquotesingle{}t let to put incorrect coefficient 
+\end{DoxyNote}
+
+
+Definition at line 11 of file io.\+cpp.
+
+\mbox{\Hypertarget{include_2io_8h_a2b7f0a41a1147900627061c670cfbebf}\label{include_2io_8h_a2b7f0a41a1147900627061c670cfbebf}} 
+\index{io.h@{io.h}!print\_solution@{print\_solution}}
+\index{print\_solution@{print\_solution}!io.h@{io.h}}
+\doxysubsubsection{\texorpdfstring{print\_solution()}{print\_solution()}}
+{\footnotesize\ttfamily void print\+\_\+solution (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{common__library_8h_a5f1bc833b90b111d3ff80955ad6bf1e7}{Num\+\_\+\+Roots}}}]{num\+\_\+roots,  }\item[{double}]{x1,  }\item[{double}]{x2 }\end{DoxyParamCaption})}
+
+Prints solution of a square equation ax2 + bx + c = 0
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em num\+\_\+roots} & Root of solution \\
+\hline
+\mbox{\texttt{ in}}  & {\em x1} & 1st solution \\
+\hline
+\mbox{\texttt{ in}}  & {\em x2} & 2nd solution if exist\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Function print\+\_\+solutions takes only (0 $<$= num\+\_\+roots $<$= 3) 
+\end{DoxyNote}
+
+
+Definition at line 53 of file io.\+cpp.
+

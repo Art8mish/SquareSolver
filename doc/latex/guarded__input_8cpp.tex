@@ -1,0 +1,62 @@
+\hypertarget{guarded__input_8cpp}{}\doxysection{guarded\+\_\+input.\+cpp File Reference}
+\label{guarded__input_8cpp}\index{guarded\_input.cpp@{guarded\_input.cpp}}
+{\ttfamily \#include \char`\"{}Square\+Solver\+Func.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}guarded\+\_\+io.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{guarded__input_8cpp_a645b7d6d939a966bb49276bb87285fd7}{guarded\+\_\+input}} (double $\ast$a, double $\ast$b, double $\ast$c)
+\item 
+void \mbox{\hyperlink{guarded__input_8cpp_acc15b3217cbcca9917629ef3cb1f5421}{print\+\_\+solutions}} (int sol\+\_\+num, double x1, double x2)
+\item 
+void \mbox{\hyperlink{guarded__input_8cpp_a7fcc6234a1bb58c1aff6aadf2156655c}{check\+\_\+error}} (int error\+\_\+num)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{guarded__input_8cpp_a7fcc6234a1bb58c1aff6aadf2156655c}\label{guarded__input_8cpp_a7fcc6234a1bb58c1aff6aadf2156655c}} 
+\index{guarded\_input.cpp@{guarded\_input.cpp}!check\_error@{check\_error}}
+\index{check\_error@{check\_error}!guarded\_input.cpp@{guarded\_input.cpp}}
+\doxysubsubsection{\texorpdfstring{check\_error()}{check\_error()}}
+{\footnotesize\ttfamily void check\+\_\+error (\begin{DoxyParamCaption}\item[{int}]{error\+\_\+num }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{guarded__input_8cpp_a645b7d6d939a966bb49276bb87285fd7}\label{guarded__input_8cpp_a645b7d6d939a966bb49276bb87285fd7}} 
+\index{guarded\_input.cpp@{guarded\_input.cpp}!guarded\_input@{guarded\_input}}
+\index{guarded\_input@{guarded\_input}!guarded\_input.cpp@{guarded\_input.cpp}}
+\doxysubsubsection{\texorpdfstring{guarded\_input()}{guarded\_input()}}
+{\footnotesize\ttfamily void guarded\+\_\+input (\begin{DoxyParamCaption}\item[{double $\ast$}]{a,  }\item[{double $\ast$}]{b,  }\item[{double $\ast$}]{c }\end{DoxyParamCaption})}
+
+Read coefficients for a square equation ax2 + bx + c = 0
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em a} & Pointer to the a-\/coefficient \\
+\hline
+\mbox{\texttt{ out}}  & {\em b} & Pointer to the b-\/coefficient \\
+\hline
+\mbox{\texttt{ out}}  & {\em c} & Pointer to the c-\/coefficient\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Program doesn\textquotesingle{}t let to put incorrect coefficient 
+\end{DoxyNote}
+\mbox{\Hypertarget{guarded__input_8cpp_acc15b3217cbcca9917629ef3cb1f5421}\label{guarded__input_8cpp_acc15b3217cbcca9917629ef3cb1f5421}} 
+\index{guarded\_input.cpp@{guarded\_input.cpp}!print\_solutions@{print\_solutions}}
+\index{print\_solutions@{print\_solutions}!guarded\_input.cpp@{guarded\_input.cpp}}
+\doxysubsubsection{\texorpdfstring{print\_solutions()}{print\_solutions()}}
+{\footnotesize\ttfamily void print\+\_\+solutions (\begin{DoxyParamCaption}\item[{int}]{sol\+\_\+num,  }\item[{double}]{x1,  }\item[{double}]{x2 }\end{DoxyParamCaption})}
+
+Prints solution of a square equation ax2 + bx + c = 0
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em sol\+\_\+num} & Root of solution \\
+\hline
+\mbox{\texttt{ in}}  & {\em x1} & 1st solution \\
+\hline
+\mbox{\texttt{ in}}  & {\em x2} & 2nd solution if exist\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Function print\+\_\+solutions takes only (0 $<$= sol\+\_\+num $<$= 3) 
+\end{DoxyNote}

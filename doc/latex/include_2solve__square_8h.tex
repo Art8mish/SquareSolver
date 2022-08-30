@@ -1,0 +1,78 @@
+\hypertarget{include_2solve__square_8h}{}\doxysection{include/solve\+\_\+square.h File Reference}
+\label{include_2solve__square_8h}\index{include/solve\_square.h@{include/solve\_square.h}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{common__library_8h_a5f1bc833b90b111d3ff80955ad6bf1e7}{Num\+\_\+\+Roots}} \mbox{\hyperlink{include_2solve__square_8h_a5ad29eb3936abbcae50fd9a6a6faaf7f}{solve\+\_\+square}} (double a, double b, double c, double $\ast$x1, double $\ast$x2)
+\item 
+\mbox{\hyperlink{common__library_8h_a5f1bc833b90b111d3ff80955ad6bf1e7}{Num\+\_\+\+Roots}} \mbox{\hyperlink{include_2solve__square_8h_afa659da84cfcbc402b0382ddc81df1e9}{solve\+\_\+linear}} (double b, double c, double $\ast$x1)
+\item 
+int \mbox{\hyperlink{include_2solve__square_8h_ab00d912be3ba37c91acb349ae26da7f4}{is\+\_\+zero}} (double value)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{include_2solve__square_8h_ab00d912be3ba37c91acb349ae26da7f4}\label{include_2solve__square_8h_ab00d912be3ba37c91acb349ae26da7f4}} 
+\index{solve\_square.h@{solve\_square.h}!is\_zero@{is\_zero}}
+\index{is\_zero@{is\_zero}!solve\_square.h@{solve\_square.h}}
+\doxysubsubsection{\texorpdfstring{is\_zero()}{is\_zero()}}
+{\footnotesize\ttfamily int is\+\_\+zero (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})}
+
+Compares double with 0
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value} & Double argument\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if (value == 0) and False if not
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+If (value is very close to 0) True 
+\end{DoxyNote}
+
+
+Definition at line 5 of file solve\+\_\+square.\+cpp.
+
+\mbox{\Hypertarget{include_2solve__square_8h_afa659da84cfcbc402b0382ddc81df1e9}\label{include_2solve__square_8h_afa659da84cfcbc402b0382ddc81df1e9}} 
+\index{solve\_square.h@{solve\_square.h}!solve\_linear@{solve\_linear}}
+\index{solve\_linear@{solve\_linear}!solve\_square.h@{solve\_square.h}}
+\doxysubsubsection{\texorpdfstring{solve\_linear()}{solve\_linear()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{common__library_8h_a5f1bc833b90b111d3ff80955ad6bf1e7}{Num\+\_\+\+Roots}} solve\+\_\+linear (\begin{DoxyParamCaption}\item[{double}]{b,  }\item[{double}]{c,  }\item[{double $\ast$}]{x1 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 11 of file solve\+\_\+square.\+cpp.
+
+\mbox{\Hypertarget{include_2solve__square_8h_a5ad29eb3936abbcae50fd9a6a6faaf7f}\label{include_2solve__square_8h_a5ad29eb3936abbcae50fd9a6a6faaf7f}} 
+\index{solve\_square.h@{solve\_square.h}!solve\_square@{solve\_square}}
+\index{solve\_square@{solve\_square}!solve\_square.h@{solve\_square.h}}
+\doxysubsubsection{\texorpdfstring{solve\_square()}{solve\_square()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{common__library_8h_a5f1bc833b90b111d3ff80955ad6bf1e7}{Num\+\_\+\+Roots}} solve\+\_\+square (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b,  }\item[{double}]{c,  }\item[{double $\ast$}]{x1,  }\item[{double $\ast$}]{x2 }\end{DoxyParamCaption})}
+
+Solve a square equation ax2 + bx + c = 0
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a} & a-\/coefficient \\
+\hline
+\mbox{\texttt{ in}}  & {\em b} & b-\/coefficient \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & c-\/coefficient\\
+\hline
+\mbox{\texttt{ out}}  & {\em x1} & Pointer to the 1st root \\
+\hline
+\mbox{\texttt{ out}}  & {\em x2} & Pointer to the 2nd root\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Quantity of solution
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Return (-\/1) if infinity quantity of solutions 
+\end{DoxyNote}
+
+
+Definition at line 38 of file solve\+\_\+square.\+cpp.
+

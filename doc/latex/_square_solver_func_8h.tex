@@ -1,0 +1,104 @@
+\hypertarget{_square_solver_func_8h}{}\doxysection{Square\+Solver\+Func.\+h File Reference}
+\label{_square_solver_func_8h}\index{SquareSolverFunc.h@{SquareSolverFunc.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$TXlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_square_solver_func_8h_a654a682cd728e4926b7fbe94e85e7094}{SOFT\+\_\+\+ASSERT}}(condition)
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_square_solver_func_8h_a074e42b89f6f3dc6c389b79feccb0c11}{SOL\+\_\+\+NUM\+\_\+\+ROOTS}} \{ \mbox{\hyperlink{_square_solver_func_8h_a074e42b89f6f3dc6c389b79feccb0c11a744065c64f7cd30f69ed5c8e7a61babf}{NO\+\_\+\+SOL}} = 0
+, \mbox{\hyperlink{_square_solver_func_8h_a074e42b89f6f3dc6c389b79feccb0c11a9975cac25be5c19ebc100ebc58e67004}{ONE\+\_\+\+SOL}} = 1
+, \mbox{\hyperlink{_square_solver_func_8h_a074e42b89f6f3dc6c389b79feccb0c11a681db2e870834d62487cf322aacd31ac}{TWO\+\_\+\+SOL}} = 2
+, \mbox{\hyperlink{_square_solver_func_8h_a074e42b89f6f3dc6c389b79feccb0c11af3e6fa9925576441c12b61696459de11}{INF\+\_\+\+SOL}} = 3
+ \}
+\item 
+enum \mbox{\hyperlink{_square_solver_func_8h_a622ccac4bed4b5ffcfd1acea83629286}{ERRORS}} \{ \mbox{\hyperlink{_square_solver_func_8h_a622ccac4bed4b5ffcfd1acea83629286a6a150c63f3601409abb15ff91b369777}{INCORRECT\+\_\+\+COEF}} = 4
+, \mbox{\hyperlink{_square_solver_func_8h_a622ccac4bed4b5ffcfd1acea83629286ae0bba7b8498dd628ba48c008ad27b5b0}{POINT\+\_\+\+ERROR}} = 5
+, \mbox{\hyperlink{_square_solver_func_8h_a622ccac4bed4b5ffcfd1acea83629286a46e65c03ce4c86748a84ab06d1989bb9}{SAME\+\_\+\+ADDRESS\+\_\+\+ERROR}} = 6
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_square_solver_func_8h_a979e020415f037fa346b2373956ea5b9}{greeting}} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_square_solver_func_8h_a654a682cd728e4926b7fbe94e85e7094}\label{_square_solver_func_8h_a654a682cd728e4926b7fbe94e85e7094}} 
+\index{SquareSolverFunc.h@{SquareSolverFunc.h}!SOFT\_ASSERT@{SOFT\_ASSERT}}
+\index{SOFT\_ASSERT@{SOFT\_ASSERT}!SquareSolverFunc.h@{SquareSolverFunc.h}}
+\doxysubsubsection{\texorpdfstring{SOFT\_ASSERT}{SOFT\_ASSERT}}
+{\footnotesize\ttfamily \#define SOFT\+\_\+\+ASSERT(\begin{DoxyParamCaption}\item[{}]{condition }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{            \textcolor{keywordflow}{if} (!(condition))                                         \(\backslash\)}
+\DoxyCodeLine{                printf(\textcolor{stringliteral}{"{}Error in \%s; file: \%s; num of line: \%d \(\backslash\)n"{}},   \(\backslash\)}
+\DoxyCodeLine{                       \#condition, \_\_FILE\_\_, \_\_LINE\_\_);}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_square_solver_func_8h_a622ccac4bed4b5ffcfd1acea83629286}\label{_square_solver_func_8h_a622ccac4bed4b5ffcfd1acea83629286}} 
+\index{SquareSolverFunc.h@{SquareSolverFunc.h}!ERRORS@{ERRORS}}
+\index{ERRORS@{ERRORS}!SquareSolverFunc.h@{SquareSolverFunc.h}}
+\doxysubsubsection{\texorpdfstring{ERRORS}{ERRORS}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_square_solver_func_8h_a622ccac4bed4b5ffcfd1acea83629286}{ERRORS}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INCORRECT\_COEF@{INCORRECT\_COEF}!SquareSolverFunc.h@{SquareSolverFunc.h}}\index{SquareSolverFunc.h@{SquareSolverFunc.h}!INCORRECT\_COEF@{INCORRECT\_COEF}}}\mbox{\Hypertarget{_square_solver_func_8h_a622ccac4bed4b5ffcfd1acea83629286a6a150c63f3601409abb15ff91b369777}\label{_square_solver_func_8h_a622ccac4bed4b5ffcfd1acea83629286a6a150c63f3601409abb15ff91b369777}} 
+INCORRECT\+\_\+\+COEF&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{POINT\_ERROR@{POINT\_ERROR}!SquareSolverFunc.h@{SquareSolverFunc.h}}\index{SquareSolverFunc.h@{SquareSolverFunc.h}!POINT\_ERROR@{POINT\_ERROR}}}\mbox{\Hypertarget{_square_solver_func_8h_a622ccac4bed4b5ffcfd1acea83629286ae0bba7b8498dd628ba48c008ad27b5b0}\label{_square_solver_func_8h_a622ccac4bed4b5ffcfd1acea83629286ae0bba7b8498dd628ba48c008ad27b5b0}} 
+POINT\+\_\+\+ERROR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SAME\_ADDRESS\_ERROR@{SAME\_ADDRESS\_ERROR}!SquareSolverFunc.h@{SquareSolverFunc.h}}\index{SquareSolverFunc.h@{SquareSolverFunc.h}!SAME\_ADDRESS\_ERROR@{SAME\_ADDRESS\_ERROR}}}\mbox{\Hypertarget{_square_solver_func_8h_a622ccac4bed4b5ffcfd1acea83629286a46e65c03ce4c86748a84ab06d1989bb9}\label{_square_solver_func_8h_a622ccac4bed4b5ffcfd1acea83629286a46e65c03ce4c86748a84ab06d1989bb9}} 
+SAME\+\_\+\+ADDRESS\+\_\+\+ERROR&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_square_solver_func_8h_a074e42b89f6f3dc6c389b79feccb0c11}\label{_square_solver_func_8h_a074e42b89f6f3dc6c389b79feccb0c11}} 
+\index{SquareSolverFunc.h@{SquareSolverFunc.h}!SOL\_NUM\_ROOTS@{SOL\_NUM\_ROOTS}}
+\index{SOL\_NUM\_ROOTS@{SOL\_NUM\_ROOTS}!SquareSolverFunc.h@{SquareSolverFunc.h}}
+\doxysubsubsection{\texorpdfstring{SOL\_NUM\_ROOTS}{SOL\_NUM\_ROOTS}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_square_solver_func_8h_a074e42b89f6f3dc6c389b79feccb0c11}{SOL\+\_\+\+NUM\+\_\+\+ROOTS}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NO\_SOL@{NO\_SOL}!SquareSolverFunc.h@{SquareSolverFunc.h}}\index{SquareSolverFunc.h@{SquareSolverFunc.h}!NO\_SOL@{NO\_SOL}}}\mbox{\Hypertarget{_square_solver_func_8h_a074e42b89f6f3dc6c389b79feccb0c11a744065c64f7cd30f69ed5c8e7a61babf}\label{_square_solver_func_8h_a074e42b89f6f3dc6c389b79feccb0c11a744065c64f7cd30f69ed5c8e7a61babf}} 
+NO\+\_\+\+SOL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ONE\_SOL@{ONE\_SOL}!SquareSolverFunc.h@{SquareSolverFunc.h}}\index{SquareSolverFunc.h@{SquareSolverFunc.h}!ONE\_SOL@{ONE\_SOL}}}\mbox{\Hypertarget{_square_solver_func_8h_a074e42b89f6f3dc6c389b79feccb0c11a9975cac25be5c19ebc100ebc58e67004}\label{_square_solver_func_8h_a074e42b89f6f3dc6c389b79feccb0c11a9975cac25be5c19ebc100ebc58e67004}} 
+ONE\+\_\+\+SOL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TWO\_SOL@{TWO\_SOL}!SquareSolverFunc.h@{SquareSolverFunc.h}}\index{SquareSolverFunc.h@{SquareSolverFunc.h}!TWO\_SOL@{TWO\_SOL}}}\mbox{\Hypertarget{_square_solver_func_8h_a074e42b89f6f3dc6c389b79feccb0c11a681db2e870834d62487cf322aacd31ac}\label{_square_solver_func_8h_a074e42b89f6f3dc6c389b79feccb0c11a681db2e870834d62487cf322aacd31ac}} 
+TWO\+\_\+\+SOL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INF\_SOL@{INF\_SOL}!SquareSolverFunc.h@{SquareSolverFunc.h}}\index{SquareSolverFunc.h@{SquareSolverFunc.h}!INF\_SOL@{INF\_SOL}}}\mbox{\Hypertarget{_square_solver_func_8h_a074e42b89f6f3dc6c389b79feccb0c11af3e6fa9925576441c12b61696459de11}\label{_square_solver_func_8h_a074e42b89f6f3dc6c389b79feccb0c11af3e6fa9925576441c12b61696459de11}} 
+INF\+\_\+\+SOL&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_square_solver_func_8h_a979e020415f037fa346b2373956ea5b9}\label{_square_solver_func_8h_a979e020415f037fa346b2373956ea5b9}} 
+\index{SquareSolverFunc.h@{SquareSolverFunc.h}!greeting@{greeting}}
+\index{greeting@{greeting}!SquareSolverFunc.h@{SquareSolverFunc.h}}
+\doxysubsubsection{\texorpdfstring{greeting()}{greeting()}}
+{\footnotesize\ttfamily void greeting (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+

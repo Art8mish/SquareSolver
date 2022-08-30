@@ -1,0 +1,654 @@
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe,
+
+ВНЕЗАПНО: Недопустимая операция с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x76D409D2 в функции RaiseException() в модуле C:\Windows\System32\KERNELBASE.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x3AA0 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x76D409D2 in C:\Windows\System32\KERNELBASE.dll: RaiseException()
+# 1 0x77124A4A in C:\Windows\System32\msvcrt.dll: modf()
+# 2 0x7712480F in C:\Windows\System32\msvcrt.dll: modf()
+# 3 0x771271BA in C:\Windows\System32\msvcrt.dll: modf()
+# 4 0x771215B0 in C:\Windows\System32\msvcrt.dll: modf()
+# 5 0x771166A8 in C:\Windows\System32\msvcrt.dll: sqrt()
+
+# 6 0x004DA257 in C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe: main() at C:/Program Files/CodeBlocks/CBProjects/SquareSolver/SquareSolver.cpp (17):
+
+     15: 
+     16:     else    /* a != 0 */
+=>   17:         solve_square(a, b, c, &x1, &x2, &sol_numb);
+     18: 
+     19:     print_solutions(sol_numb, x1, x2);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Aug 23 2022 18:49:48, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Aug 23 2022 18:55:45
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\SquareSolver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe,
+
+ВНЕЗАПНО: signal (8, 0x00): SIGFPE: Грубая ошибка в вычислениях. 
+
+Недопустимая операция с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x76D409D2 в функции RaiseException() в модуле C:\Windows\System32\KERNELBASE.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x3AA0 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x76D409D2 in C:\Windows\System32\KERNELBASE.dll: RaiseException()
+# 1 0x77124A4A in C:\Windows\System32\msvcrt.dll: modf()
+# 2 0x7712480F in C:\Windows\System32\msvcrt.dll: modf()
+# 3 0x771271BA in C:\Windows\System32\msvcrt.dll: modf()
+# 4 0x771215B0 in C:\Windows\System32\msvcrt.dll: modf()
+# 5 0x771166A8 in C:\Windows\System32\msvcrt.dll: sqrt()
+
+# 6 0x004DA257 in C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe: main() at C:/Program Files/CodeBlocks/CBProjects/SquareSolver/SquareSolver.cpp (17):
+
+     15: 
+     16:     else    /* a != 0 */
+=>   17:         solve_square(a, b, c, &x1, &x2, &sol_numb);
+     18: 
+     19:     print_solutions(sol_numb, x1, x2);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Aug 23 2022 18:49:48, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Aug 23 2022 18:55:45
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\SquareSolver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe,
+
+ВНЕЗАПНО: signal (22, 0x00): SIGABRT: Аварийное завершение программы, вызвана функция abort(). 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x25A0 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004BFACE in C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe: _txOnSignal() at c:/program files/codeblocks/codeblocks/mingw/include/txlib.h (10992)
+# 1 0x770D8081 in C:\Windows\System32\msvcrt.dll: raise()
+# 2 0x770DC5AB in C:\Windows\System32\msvcrt.dll: abort()
+# 3 0x770D8EDA in C:\Windows\System32\msvcrt.dll: assert()
+
+# 4 0x00482C3E in C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe: print_solutions() at C:/Program Files/CodeBlocks/CBProjects/SquareSolver/print_solutions.cpp (7):
+
+      5: {
+      6:     assert(std::isfinite(x1));
+=>    7:     assert(std::isfinite(x2));
+      8: 
+      9:     assert(sol_numb >= NO_SOL);
+
+# 5 0x004DA254 in C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe: main() at C:/Program Files/CodeBlocks/CBProjects/SquareSolver/SquareSolver.cpp (15):
+
+     13:     solve_square(a, b, c, &x1, &x2, &sol_numb);
+     14: 
+=>   15:     print_solutions(sol_numb, x1, x2);
+     16: }
+     17: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Aug 23 2022 19:20:00, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Aug 23 2022 19:20:39
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\SquareSolver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe,
+
+ВНЕЗАПНО: signal (22, 0x00): SIGABRT: Аварийное завершение программы, вызвана функция abort(). 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x31A4 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004BFACE in C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe: _txOnSignal() at c:/program files/codeblocks/codeblocks/mingw/include/txlib.h (10992)
+# 1 0x770D8081 in C:\Windows\System32\msvcrt.dll: raise()
+# 2 0x770DC5AB in C:\Windows\System32\msvcrt.dll: abort()
+# 3 0x770D8EDA in C:\Windows\System32\msvcrt.dll: assert()
+
+# 4 0x00482C3E in C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe: print_solutions() at C:/Program Files/CodeBlocks/CBProjects/SquareSolver/print_solutions.cpp (7):
+
+      5: {
+      6:     assert(std::isfinite(x1));
+=>    7:     assert(std::isfinite(x2));
+      8: 
+      9:     assert(sol_numb >= NO_SOL);
+
+# 5 0x004DA254 in C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe: main() at C:/Program Files/CodeBlocks/CBProjects/SquareSolver/SquareSolver.cpp (15):
+
+     13:     solve_square(a, b, c, &x1, &x2, &sol_numb);
+     14: 
+=>   15:     print_solutions(sol_numb, x1, x2);
+     16: }
+     17: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Aug 23 2022 19:20:00, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Aug 23 2022 19:20:48
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\SquareSolver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe,
+
+ВНЕЗАПНО: signal (22, 0x00): SIGABRT: Аварийное завершение программы, вызвана функция abort(). 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x30B8 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004BFAD2 in C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe: _txOnSignal() at c:/program files/codeblocks/codeblocks/mingw/include/txlib.h (10992)
+# 1 0x770D8081 in C:\Windows\System32\msvcrt.dll: raise()
+# 2 0x770DC5AB in C:\Windows\System32\msvcrt.dll: abort()
+# 3 0x770D8EDA in C:\Windows\System32\msvcrt.dll: assert()
+
+# 4 0x00482C3E in C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe: print_solutions() at C:/Program Files/CodeBlocks/CBProjects/SquareSolver/print_solutions.cpp (7):
+
+      5: {
+      6:     assert(std::isfinite(x1));
+=>    7:     assert(std::isfinite(x2));
+      8: 
+      9:     assert(sol_numb >= NO_SOL);
+
+# 5 0x004DA258 in C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe: main() at C:/Program Files/CodeBlocks/CBProjects/SquareSolver/SquareSolver.cpp (15):
+
+     13:     solve_square(a, b, c, &x1, &x2, &sol_numb);
+     14: 
+=>   15:     print_solutions(sol_numb, x1, x2);
+     16: }
+     17: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Aug 23 2022 19:20:00, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Aug 23 2022 19:21:46
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\SquareSolver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe,
+
+ВНЕЗАПНО: signal (22, 0x00): SIGABRT: Аварийное завершение программы, вызвана функция abort(). 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x2220 (Main), GetLastError(): 126 (Не найден указанный модуль), errno: 33 (Domain error). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004BFA5A in C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe: _txOnSignal() at c:/program files/codeblocks/codeblocks/mingw/include/txlib.h (10992)
+# 1 0x773C8081 in C:\Windows\System32\msvcrt.dll: raise()
+# 2 0x773CC5AB in C:\Windows\System32\msvcrt.dll: abort()
+# 3 0x773C8EDA in C:\Windows\System32\msvcrt.dll: assert()
+
+# 4 0x004573B7 in C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe: print_solutions() at C:/Program Files/CodeBlocks/CBProjects/SquareSolver/guarded_input.cpp (45):
+
+     43: void print_solutions(int sol_num, double x1, double x2)
+     44: {
+=>   45:     assert(std::isfinite(x1));
+     46:     assert(std::isfinite(x2));
+     47: 
+
+# 5 0x004DA187 in C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe: TestSquare() at C:/Program Files/CodeBlocks/CBProjects/SquareSolver/tests.cpp (23):
+
+     21:     printf(" # Accepted a, b, c: %lg, %lg, %lg.\n", a, b, c);
+     22:     solve_square(a, b, c, x1, x2, sol_num);
+=>   23:     print_solutions(*sol_num, *x1, *x2);
+     24: 
+     25:     printf("All tests completed.");
+
+# 6 0x004AE88E in C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe: main() at C:/Program Files/CodeBlocks/CBProjects/SquareSolver/SquareSolver.cpp (30):
+
+     28:     #else
+     29: 
+=>   30:     TestSquare(&x1, &x2, &sol_num);
+     31: 
+     32:     #endif
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Aug 24 2022 15:13:16, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Aug 24 2022 15:13:29
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\SquareSolver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe,
+
+ВНЕЗАПНО: Недопустимая операция с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x00482E31 в функции solve_square() в файле C:/Program Files/CodeBlocks/CBProjects/SquareSolver/solve_square.cpp на строке 49 в модуле C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006C917C (32-bit), Flags: Cmdre0, Thread: 0x16EC (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00482E31 in C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe: solve_square() at C:/Program Files/CodeBlocks/CBProjects/SquareSolver/solve_square.cpp (49):
+
+     47:     assert(sol_num != NULL);*/
+     48: 
+=>   49:     double Discriminant = b*b - 4*a*c;      // search of discriminant D
+     50:     double sqrt_Discriminant = 0;
+     51: 
+
+# 1 0x004DA0CE in C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe: TestSquare() at C:/Program Files/CodeBlocks/CBProjects/SquareSolver/tests.cpp (23):
+
+     21:     double c = INFINITY;
+     22:     printf(" # Accepted a, b, c: %lg, %lg, %lg.\n", a, b, c);
+=>   23:     solve_square(a, b, c, x1, x2, sol_num);
+     24:     print_solutions(*sol_num, *x1, *x2);
+     25: 
+
+# 2 0x004AE7F6 in C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe: main() at C:/Program Files/CodeBlocks/CBProjects/SquareSolver/SquareSolver.cpp (30):
+
+     28:     #else
+     29: 
+=>   30:     TestSquare(&x1, &x2, &sol_num);
+     31: 
+     32:     #endif
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Aug 24 2022 15:17:52, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Aug 24 2022 15:18:01
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\SquareSolver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe,
+
+ВНЕЗАПНО: signal (8, 0x00): SIGFPE: Грубая ошибка в вычислениях. 
+
+Недопустимая операция с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x00482E31 в функции solve_square() в файле C:/Program Files/CodeBlocks/CBProjects/SquareSolver/solve_square.cpp на строке 49 в модуле C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006C917C (32-bit), Flags: Cmdre0, Thread: 0x16EC (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00482E31 in C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe: solve_square() at C:/Program Files/CodeBlocks/CBProjects/SquareSolver/solve_square.cpp (49):
+
+     47:     assert(sol_num != NULL);*/
+     48: 
+=>   49:     double Discriminant = b*b - 4*a*c;      // search of discriminant D
+     50:     double sqrt_Discriminant = 0;
+     51: 
+
+# 1 0x004DA0CE in C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe: TestSquare() at C:/Program Files/CodeBlocks/CBProjects/SquareSolver/tests.cpp (23):
+
+     21:     double c = INFINITY;
+     22:     printf(" # Accepted a, b, c: %lg, %lg, %lg.\n", a, b, c);
+=>   23:     solve_square(a, b, c, x1, x2, sol_num);
+     24:     print_solutions(*sol_num, *x1, *x2);
+     25: 
+
+# 2 0x004AE7F6 in C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe: main() at C:/Program Files/CodeBlocks/CBProjects/SquareSolver/SquareSolver.cpp (30):
+
+     28:     #else
+     29: 
+=>   30:     TestSquare(&x1, &x2, &sol_num);
+     31: 
+     32:     #endif
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Aug 24 2022 15:17:52, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Aug 24 2022 15:18:01
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\SquareSolver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe,
+
+ВНЕЗАПНО: Недопустимая операция с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x00482EC2 в функции solve_square() в файле C:/Program Files/CodeBlocks/CBProjects/SquareSolver/solve_square.cpp на строке 59 в модуле C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x3770 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00482EC2 in C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe: solve_square() at C:/Program Files/CodeBlocks/CBProjects/SquareSolver/solve_square.cpp (59):
+
+     57:     }
+     58: 
+=>   59:     double Discriminant = b*b - 4*a*c;      // search of discriminant D
+     60:     double sqrt_Discriminant = 0;
+     61: 
+
+# 1 0x004DA166 in C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe: TestSquare() at C:/Program Files/CodeBlocks/CBProjects/SquareSolver/tests.cpp (23):
+
+     21:     double c = INFINITY;
+     22:     printf(" # Accepted a, b, c: %lg, %lg, %lg.\n", a, b, c);
+=>   23:     solve_square(a, b, c, x1, x2, sol_num);
+     24:     print_solutions(*sol_num, *x1, *x2);
+     25: 
+
+# 2 0x004AE88E in C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe: main() at C:/Program Files/CodeBlocks/CBProjects/SquareSolver/SquareSolver.cpp (30):
+
+     28:     #else
+     29: 
+=>   30:     TestSquare(&x1, &x2, &sol_num);
+     31: 
+     32:     #endif
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Aug 24 2022 15:33:16, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Aug 24 2022 15:35:58
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\SquareSolver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe,
+
+ВНЕЗАПНО: signal (8, 0x00): SIGFPE: Грубая ошибка в вычислениях. 
+
+Недопустимая операция с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x00482EC2 в функции solve_square() в файле C:/Program Files/CodeBlocks/CBProjects/SquareSolver/solve_square.cpp на строке 59 в модуле C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0x3770 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00482EC2 in C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe: solve_square() at C:/Program Files/CodeBlocks/CBProjects/SquareSolver/solve_square.cpp (59):
+
+     57:     }
+     58: 
+=>   59:     double Discriminant = b*b - 4*a*c;      // search of discriminant D
+     60:     double sqrt_Discriminant = 0;
+     61: 
+
+# 1 0x004DA166 in C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe: TestSquare() at C:/Program Files/CodeBlocks/CBProjects/SquareSolver/tests.cpp (23):
+
+     21:     double c = INFINITY;
+     22:     printf(" # Accepted a, b, c: %lg, %lg, %lg.\n", a, b, c);
+=>   23:     solve_square(a, b, c, x1, x2, sol_num);
+     24:     print_solutions(*sol_num, *x1, *x2);
+     25: 
+
+# 2 0x004AE88E in C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe: main() at C:/Program Files/CodeBlocks/CBProjects/SquareSolver/SquareSolver.cpp (30):
+
+     28:     #else
+     29: 
+=>   30:     TestSquare(&x1, &x2, &sol_num);
+     31: 
+     32:     #endif
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Aug 24 2022 15:33:16, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Aug 24 2022 15:35:58
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\SquareSolver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe,
+
+ВНЕЗАПНО: Недопустимая операция с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x00482EC2 в функции solve_square() в файле C:/Program Files/CodeBlocks/CBProjects/SquareSolver/solve_square.cpp на строке 59 в модуле C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0xDFC (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00482EC2 in C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe: solve_square() at C:/Program Files/CodeBlocks/CBProjects/SquareSolver/solve_square.cpp (59):
+
+     57:     }
+     58: 
+=>   59:     double Discriminant = b*b - 4*a*c;      // search of discriminant D
+     60:     double sqrt_Discriminant = 0;
+     61: 
+
+# 1 0x004DA166 in C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe: TestSquare() at C:/Program Files/CodeBlocks/CBProjects/SquareSolver/tests.cpp (23):
+
+     21:     double c = INFINITY;
+     22:     printf(" # Accepted a, b, c: %lg, %lg, %lg.\n", a, b, c);
+=>   23:     solve_square(a, b, c, x1, x2, sol_num);
+     24:     print_solutions(*sol_num, *x1, *x2);
+     25: 
+
+# 2 0x004AE88E in C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe: main() at C:/Program Files/CodeBlocks/CBProjects/SquareSolver/SquareSolver.cpp (30):
+
+     28:     #else
+     29: 
+=>   30:     TestSquare(&x1, &x2, &sol_num);
+     31: 
+     32:     #endif
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Aug 24 2022 15:33:16, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Aug 24 2022 15:36:19
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\SquareSolver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe,
+
+ВНЕЗАПНО: signal (8, 0x00): SIGFPE: Грубая ошибка в вычислениях. 
+
+Недопустимая операция с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x00482EC2 в функции solve_square() в файле C:/Program Files/CodeBlocks/CBProjects/SquareSolver/solve_square.cpp на строке 59 в модуле C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x006CA17C (32-bit), Flags: Cmdre0, Thread: 0xDFC (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00482EC2 in C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe: solve_square() at C:/Program Files/CodeBlocks/CBProjects/SquareSolver/solve_square.cpp (59):
+
+     57:     }
+     58: 
+=>   59:     double Discriminant = b*b - 4*a*c;      // search of discriminant D
+     60:     double sqrt_Discriminant = 0;
+     61: 
+
+# 1 0x004DA166 in C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe: TestSquare() at C:/Program Files/CodeBlocks/CBProjects/SquareSolver/tests.cpp (23):
+
+     21:     double c = INFINITY;
+     22:     printf(" # Accepted a, b, c: %lg, %lg, %lg.\n", a, b, c);
+=>   23:     solve_square(a, b, c, x1, x2, sol_num);
+     24:     print_solutions(*sol_num, *x1, *x2);
+     25: 
+
+# 2 0x004AE88E in C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe: main() at C:/Program Files/CodeBlocks/CBProjects/SquareSolver/SquareSolver.cpp (30):
+
+     28:     #else
+     29: 
+=>   30:     TestSquare(&x1, &x2, &sol_num);
+     31: 
+     32:     #endif
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Aug 24 2022 15:33:16, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Aug 24 2022 15:36:19
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\SquareSolver\bin\Debug\SquareSolver.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\SquareSolver
+
+--------------------------------------------------
