@@ -21,6 +21,8 @@ Run `<local_path_to_repo>/SquareSolver.out`.
 
 `"SquareSolver"` works with a standard form quadratic equation: `ax²+bx+c=0`. Simply enter `a` `b` `c` coefficients.
 
+![Image alt](https://github.com/Art8mish/SquareSolver/raw/images/preview.jpg)
+
 ## Docs
 
 If you want to use some modules or modify the whole program, you can check the documentation.
