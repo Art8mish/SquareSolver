@@ -50,7 +50,7 @@ void guarded_input(double *a, double *b, double *c)
 
         // if any symbols after taking 3 numbers error input
         while ((ch = getchar()) != '\n')
-            if (isspace(ch))
+            if (!isspace(ch))
                 is_input_correct = false;
 
         if (!is_input_correct)
