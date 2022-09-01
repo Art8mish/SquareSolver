@@ -2,7 +2,7 @@
 
 ## Description
 
-This program solves quadratic equation.
+This program solves a quadratic equation.
 
 ## Installation
 
