@@ -21,7 +21,7 @@ Run `<local_path_to_repo>/SquareSolver.out`.
 
 `"SquareSolver"` works with a standard form quadratic equation: `ax²+bx+c=0`. Simply enter `a` `b` `c` coefficients.
 
-![preview](https://user-images.githubusercontent.com/111497619/187561118-10780108-9fb2-4b93-8ebc-2fc77b6dd3aa.png)
+![Снимок экрана 2022-09-01 200806](https://user-images.githubusercontent.com/111497619/187972450-fb75fadd-3593-44b0-aa49-936ae9f05999.png)
 
 ## Docs
 
