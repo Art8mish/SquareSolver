@@ -24,7 +24,7 @@ int main(void)
 
     num_roots = solve_square(a, b, c, &x1, &x2);
 
-    is_solution_minus_zero(&x1, &x2);
+    removal_minus_zero(&x1, &x2);
 
     print_solution(num_roots, x1, x2);
 
