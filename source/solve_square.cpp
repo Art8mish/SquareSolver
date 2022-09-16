@@ -8,11 +8,18 @@ int is_zero(double value)
     return (fabs(value) < EPS); // comparison of absolute value with small constant
 }
 
+<<<<<<< HEAD
 double removal_minus_zero(double x)
 {
     double answer = (is_zero(fabs(x))) ? 0 : x;
 
     return answer;
+=======
+void removal_minus_zero(double *x1, double *x2)
+{
+    *x1 = (is_zero(fabs(*x1))) ? 0 : *x1;
+    *x2 = (is_zero(fabs(*x2))) ? 0 : *x2;
+>>>>>>> fdbb6b433e1965fcbe43d639c8b50a67063b51ac
 }
 
 Num_Roots solve_linear(double b, double c, double *x1)

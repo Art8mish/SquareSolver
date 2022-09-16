@@ -11,8 +11,13 @@ void greeting(void)
 
 void clean_buffer(void)
 {
+<<<<<<< HEAD
     int ch = 0;
 
+=======
+    int ch;
+    
+>>>>>>> fdbb6b433e1965fcbe43d639c8b50a67063b51ac
     while ((ch = getchar()) != '\n') { }
 }
 
