@@ -14,6 +14,6 @@
                 if (!(condition))                                         \
                     printf("Error in %s; file: %s; num of line: %d \n",   \
                            #condition, __FILE__, __LINE__);               \
-            } while(false);
+            } while(false)
 
 #endif // COMMON_LIBRARY_H_INCLUDED

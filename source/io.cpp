@@ -1,16 +1,18 @@
 
+#include <math.h>
 #include "../include/common_library.h"
 #include "../include/solve_square.h"
 #include "../include/io.h"
-#include <math.h>
 
 void greeting(void)
 {
-    printf(" # This program solves quadratic equations. (2022) \n");
+    printf(" # This program solves quadratic equations. (2022) (C) Unnamed artist\n");
 }
 
-void clean_buffer(int ch)
+void clean_buffer(void)
 {
+    int ch = 0;
+
     while ((ch = getchar()) != '\n') { }
 }
 
@@ -30,7 +32,7 @@ void guarded_input(double *a, double *b, double *c)
     bool is_input_correct = false;
 
     printf(" # Enter the coefficients a, b, c"
-           "separated by a space in equation ax^2+bx+c. \n"
+           " separated by a space in equation ax^2+bx+c.\n"
            " # Example: 14.5 167.43 -54.4               \n"
            " # Enter your coefficients:                 \n");
 
@@ -39,7 +41,7 @@ void guarded_input(double *a, double *b, double *c)
         while (scanf("%lg %lg %lg", a, b, c) != input_scanf_return)
         {
             // if input error line skips
-            clean_buffer(ch);
+            clean_buffer();
 
             printf(" # Input error, try again: \n");
         }
@@ -48,7 +50,7 @@ void guarded_input(double *a, double *b, double *c)
 
         // if any symbols after taking 3 numbers error input
         while ((ch = getchar()) != '\n')
-            if (isspace(ch))
+            if (!isspace(ch))
                 is_input_correct = false;
 
         if (!is_input_correct)
@@ -88,5 +90,4 @@ void print_solution(Num_Roots num_roots, double x1, double x2)
             printf(" # print_solution(): ERROR: sol_numb = %d. \n", num_roots);
             break;
     }
-
 }

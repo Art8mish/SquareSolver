@@ -30,6 +30,6 @@ void print_solution(Num_Roots num_roots, double x1, double x2);
 
 void greeting(void);
 
-void clean_buffer(int ch);
+void clean_buffer(void);
 
 #endif // IO_H_INCLUDED

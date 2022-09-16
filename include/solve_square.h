@@ -41,6 +41,6 @@ Num_Roots solve_linear(double b, double c, double *x1);
 
 int is_zero(double value);
 
-void is_solution_minus_zero(double *x1, double *x2);
+double removal_minus_zero(double x);
 
 #endif // SOLVE_SQUARE_H_INCLUDED
