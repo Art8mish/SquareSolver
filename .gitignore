@@ -4,3 +4,5 @@
 *.dmp
 *.depend
 *.layout
+*.o
+*.bmarks

@@ -1,15 +1,15 @@
 \hypertarget{io_8cpp}{}\doxysection{source/io.cpp File Reference}
 \label{io_8cpp}\index{source/io.cpp@{source/io.cpp}}
+{\ttfamily \#include $<$math.\+h$>$}\newline
 {\ttfamily \#include \char`\"{}../include/common\+\_\+library.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../include/solve\+\_\+square.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../include/io.\+h\char`\"{}}\newline
-{\ttfamily \#include $<$math.\+h$>$}\newline
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{io_8cpp_a979e020415f037fa346b2373956ea5b9}{greeting}} (void)
 \item 
-void \mbox{\hyperlink{io_8cpp_a1ce3cfa67b3480300afe8984c6fb86b8}{clean\+\_\+buffer}} (int ch)
+void \mbox{\hyperlink{io_8cpp_a41cd1acb29d41175fb0e8ba791b26cfe}{clean\+\_\+buffer}} (void)
 \item 
 void \mbox{\hyperlink{io_8cpp_a645b7d6d939a966bb49276bb87285fd7}{guarded\+\_\+input}} (double $\ast$a, double $\ast$b, double $\ast$c)
 \item 
@@ -18,11 +18,11 @@ void \mbox{\hyperlink{io_8cpp_a2b7f0a41a1147900627061c670cfbebf}{print\+\_\+solu
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{io_8cpp_a1ce3cfa67b3480300afe8984c6fb86b8}\label{io_8cpp_a1ce3cfa67b3480300afe8984c6fb86b8}} 
+\mbox{\Hypertarget{io_8cpp_a41cd1acb29d41175fb0e8ba791b26cfe}\label{io_8cpp_a41cd1acb29d41175fb0e8ba791b26cfe}} 
 \index{io.cpp@{io.cpp}!clean\_buffer@{clean\_buffer}}
 \index{clean\_buffer@{clean\_buffer}!io.cpp@{io.cpp}}
 \doxysubsubsection{\texorpdfstring{clean\_buffer()}{clean\_buffer()}}
-{\footnotesize\ttfamily void clean\+\_\+buffer (\begin{DoxyParamCaption}\item[{int}]{ch }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void clean\+\_\+buffer (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 
 
@@ -60,7 +60,7 @@ Program doesn\textquotesingle{}t let to put incorrect coefficient
 \end{DoxyNote}
 
 
-Definition at line 17 of file io.\+cpp.
+Definition at line 19 of file io.\+cpp.
 
 \mbox{\Hypertarget{io_8cpp_a2b7f0a41a1147900627061c670cfbebf}\label{io_8cpp_a2b7f0a41a1147900627061c670cfbebf}} 
 \index{io.cpp@{io.cpp}!print\_solution@{print\_solution}}
@@ -80,9 +80,9 @@ Prints solution of a square equation ax2 + bx + c = 0
 \hline
 \end{DoxyParams}
 \begin{DoxyNote}{Note}
-Function print\+\_\+solutions takes only (0 $<$= num\+\_\+roots $<$= 3) 
+Function print\+\_\+solutions takes only (-\/1 $<$= num\+\_\+roots $<$= 2) 
 \end{DoxyNote}
 
 
-Definition at line 61 of file io.\+cpp.
+Definition at line 63 of file io.\+cpp.
 

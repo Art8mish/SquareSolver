@@ -71,10 +71,10 @@ $(function() {
 <div class="title">io.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="common__library_8h_source.html">../include/common_library.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;math.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="common__library_8h_source.html">../include/common_library.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="solve__square_8h_source.html">../include/solve_square.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="io_8h_source.html">../include/io.h</a>&quot;</code><br />
-<code>#include &lt;math.h&gt;</code><br />
 </div>
 <p><a href="io_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -82,16 +82,16 @@ $(function() {
 Functions</h2></td></tr>
 <tr class="memitem:a979e020415f037fa346b2373956ea5b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8cpp.html#a979e020415f037fa346b2373956ea5b9">greeting</a> (void)</td></tr>
 <tr class="separator:a979e020415f037fa346b2373956ea5b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ce3cfa67b3480300afe8984c6fb86b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8cpp.html#a1ce3cfa67b3480300afe8984c6fb86b8">clean_buffer</a> (int ch)</td></tr>
-<tr class="separator:a1ce3cfa67b3480300afe8984c6fb86b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41cd1acb29d41175fb0e8ba791b26cfe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8cpp.html#a41cd1acb29d41175fb0e8ba791b26cfe">clean_buffer</a> (void)</td></tr>
+<tr class="separator:a41cd1acb29d41175fb0e8ba791b26cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a645b7d6d939a966bb49276bb87285fd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8cpp.html#a645b7d6d939a966bb49276bb87285fd7">guarded_input</a> (double *a, double *b, double *c)</td></tr>
 <tr class="separator:a645b7d6d939a966bb49276bb87285fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b7f0a41a1147900627061c670cfbebf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8cpp.html#a2b7f0a41a1147900627061c670cfbebf">print_solution</a> (<a class="el" href="solve__square_8h.html#a5f1bc833b90b111d3ff80955ad6bf1e7">Num_Roots</a> num_roots, double x1, double x2)</td></tr>
 <tr class="separator:a2b7f0a41a1147900627061c670cfbebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a1ce3cfa67b3480300afe8984c6fb86b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ce3cfa67b3480300afe8984c6fb86b8">&#9670;&nbsp;</a></span>clean_buffer()</h2>
+<a id="a41cd1acb29d41175fb0e8ba791b26cfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41cd1acb29d41175fb0e8ba791b26cfe">&#9670;&nbsp;</a></span>clean_buffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -99,8 +99,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void clean_buffer </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>ch</em></td><td>)</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -172,7 +172,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Program doesn't let to put incorrect coefficient </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="io_8cpp_source.html#l00017">17</a> of file <a class="el" href="io_8cpp_source.html">io.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="io_8cpp_source.html#l00019">19</a> of file <a class="el" href="io_8cpp_source.html">io.cpp</a>.</p>
 
 </div>
 </div>
@@ -216,9 +216,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>Function print_solutions takes only (0 &lt;= num_roots &lt;= 3) </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Function print_solutions takes only (-1 &lt;= num_roots &lt;= 2) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="io_8cpp_source.html#l00061">61</a> of file <a class="el" href="io_8cpp_source.html">io.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="io_8cpp_source.html#l00063">63</a> of file <a class="el" href="io_8cpp_source.html">io.cpp</a>.</p>
 
 </div>
 </div>

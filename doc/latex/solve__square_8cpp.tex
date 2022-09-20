@@ -7,25 +7,15 @@
 \item 
 int \mbox{\hyperlink{solve__square_8cpp_ab00d912be3ba37c91acb349ae26da7f4}{is\+\_\+zero}} (double value)
 \item 
-\mbox{\hyperlink{solve__square_8h_a5f1bc833b90b111d3ff80955ad6bf1e7}{Num\+\_\+\+Roots}} \mbox{\hyperlink{solve__square_8cpp_afa659da84cfcbc402b0382ddc81df1e9}{solve\+\_\+linear}} (double b, double c, double $\ast$x1)
+double \mbox{\hyperlink{solve__square_8cpp_a928bea9296088cbebea0d93066806a95}{removal\+\_\+minus\+\_\+zero}} (double x)
+\item 
+\mbox{\hyperlink{solve__square_8h_a5f1bc833b90b111d3ff80955ad6bf1e7}{Num\+\_\+\+Roots}} \mbox{\hyperlink{solve__square_8cpp_ac928e885b96182a4c7f4fb04bec1935b}{solve\+\_\+linear}} (double b, double c, double $\ast$x)
 \item 
 \mbox{\hyperlink{solve__square_8h_a5f1bc833b90b111d3ff80955ad6bf1e7}{Num\+\_\+\+Roots}} \mbox{\hyperlink{solve__square_8cpp_a5ad29eb3936abbcae50fd9a6a6faaf7f}{solve\+\_\+square}} (double a, double b, double c, double $\ast$x1, double $\ast$x2)
-\item 
-void \mbox{\hyperlink{solve__square_8cpp_a53b5840fb62e7bd74b57562c92dae86e}{is\+\_\+solution\+\_\+minus\+\_\+zero}} (double $\ast$x1, double $\ast$x2)
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{solve__square_8cpp_a53b5840fb62e7bd74b57562c92dae86e}\label{solve__square_8cpp_a53b5840fb62e7bd74b57562c92dae86e}} 
-\index{solve\_square.cpp@{solve\_square.cpp}!is\_solution\_minus\_zero@{is\_solution\_minus\_zero}}
-\index{is\_solution\_minus\_zero@{is\_solution\_minus\_zero}!solve\_square.cpp@{solve\_square.cpp}}
-\doxysubsubsection{\texorpdfstring{is\_solution\_minus\_zero()}{is\_solution\_minus\_zero()}}
-{\footnotesize\ttfamily void is\+\_\+solution\+\_\+minus\+\_\+zero (\begin{DoxyParamCaption}\item[{double $\ast$}]{x1,  }\item[{double $\ast$}]{x2 }\end{DoxyParamCaption})}
-
-
-
-Definition at line 78 of file solve\+\_\+square.\+cpp.
-
 \mbox{\Hypertarget{solve__square_8cpp_ab00d912be3ba37c91acb349ae26da7f4}\label{solve__square_8cpp_ab00d912be3ba37c91acb349ae26da7f4}} 
 \index{solve\_square.cpp@{solve\_square.cpp}!is\_zero@{is\_zero}}
 \index{is\_zero@{is\_zero}!solve\_square.cpp@{solve\_square.cpp}}
@@ -49,15 +39,38 @@ If (value is very close to 0) True
 
 Definition at line 5 of file solve\+\_\+square.\+cpp.
 
-\mbox{\Hypertarget{solve__square_8cpp_afa659da84cfcbc402b0382ddc81df1e9}\label{solve__square_8cpp_afa659da84cfcbc402b0382ddc81df1e9}} 
+\mbox{\Hypertarget{solve__square_8cpp_a928bea9296088cbebea0d93066806a95}\label{solve__square_8cpp_a928bea9296088cbebea0d93066806a95}} 
+\index{solve\_square.cpp@{solve\_square.cpp}!removal\_minus\_zero@{removal\_minus\_zero}}
+\index{removal\_minus\_zero@{removal\_minus\_zero}!solve\_square.cpp@{solve\_square.cpp}}
+\doxysubsubsection{\texorpdfstring{removal\_minus\_zero()}{removal\_minus\_zero()}}
+{\footnotesize\ttfamily double removal\+\_\+minus\+\_\+zero (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption})}
+
+Return 0 if argument is -\/0
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & Double argument\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if argument is -\/0 and argument if not
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+If (value is very close to 0) True 
+\end{DoxyNote}
+
+
+Definition at line 12 of file solve\+\_\+square.\+cpp.
+
+\mbox{\Hypertarget{solve__square_8cpp_ac928e885b96182a4c7f4fb04bec1935b}\label{solve__square_8cpp_ac928e885b96182a4c7f4fb04bec1935b}} 
 \index{solve\_square.cpp@{solve\_square.cpp}!solve\_linear@{solve\_linear}}
 \index{solve\_linear@{solve\_linear}!solve\_square.cpp@{solve\_square.cpp}}
 \doxysubsubsection{\texorpdfstring{solve\_linear()}{solve\_linear()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{solve__square_8h_a5f1bc833b90b111d3ff80955ad6bf1e7}{Num\+\_\+\+Roots}} solve\+\_\+linear (\begin{DoxyParamCaption}\item[{double}]{b,  }\item[{double}]{c,  }\item[{double $\ast$}]{x1 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{solve__square_8h_a5f1bc833b90b111d3ff80955ad6bf1e7}{Num\+\_\+\+Roots}} solve\+\_\+linear (\begin{DoxyParamCaption}\item[{double}]{b,  }\item[{double}]{c,  }\item[{double $\ast$}]{x }\end{DoxyParamCaption})}
 
 
 
-Definition at line 11 of file solve\+\_\+square.\+cpp.
+Definition at line 19 of file solve\+\_\+square.\+cpp.
 
 \mbox{\Hypertarget{solve__square_8cpp_a5ad29eb3936abbcae50fd9a6a6faaf7f}\label{solve__square_8cpp_a5ad29eb3936abbcae50fd9a6a6faaf7f}} 
 \index{solve\_square.cpp@{solve\_square.cpp}!solve\_square@{solve\_square}}
@@ -88,5 +101,5 @@ Return (-\/1) if infinity quantity of solutions
 \end{DoxyNote}
 
 
-Definition at line 38 of file solve\+\_\+square.\+cpp.
+Definition at line 46 of file solve\+\_\+square.\+cpp.
 

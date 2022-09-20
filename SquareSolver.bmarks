@@ -1,42 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <BrowseTracker_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="main.cpp" open="1" top="0" tabpos="2">
-		<Cursor position="134" topLine="12" />
-		<BrowseMarks positions="134,447,481,517" />
+	<File name="source\io.cpp" open="1" top="1" tabpos="6">
+		<Cursor position="333" topLine="0" />
+		<BrowseMarks positions="2,271,274,293,340,1252" />
 		<Book_Marks positions="" />
-	</File>
-	<File name="include\io.h" open="1" top="0" tabpos="5">
-		<Cursor position="854" topLine="10" />
-		<BrowseMarks positions="306,486,1035,1061" />
-		<Book_Marks positions="" />
-	</File>
-	<File name="source\solve_square.cpp" open="1" top="0" tabpos="1">
-		<Cursor position="56" topLine="0" />
-		<BrowseMarks positions="2,232,234,323,350,482,513,775,801,838,1284,1369,1752" />
-		<Book_Marks positions="" />
-	</File>
-	<File name="include\common_library.h" open="1" top="0" tabpos="4">
-		<Cursor position="195" topLine="4" />
-		<BrowseMarks positions="193,216,626,703,733,742" />
-		<Book_Marks positions="" />
-	</File>
-	<File name="include\solve_square.h" open="1" top="0" tabpos="3">
-		<Cursor position="1096" topLine="4" />
-		<BrowseMarks positions="0,106,719,1096,1098,1391" />
-		<Book_Marks positions="" />
-	</File>
-	<File name="tests\tests_square.h" open="0" top="0" tabpos="8">
-		<Cursor position="15" topLine="0" />
-		<BrowseMarks positions="260" />
 	</File>
 	<File name="tests\test_square.cpp" open="0" top="0" tabpos="4">
 		<Cursor position="2366" topLine="0" />
 		<BrowseMarks positions="135,2363" />
 	</File>
-	<File name="source\io.cpp" open="1" top="1" tabpos="6">
-		<Cursor position="333" topLine="4" />
-		<BrowseMarks positions="2,271,274,293,340,1252" />
-		<Book_Marks positions="" />
+	<File name="main.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="134" topLine="0" />
+		<BrowseMarks positions="134,447,481,517" />
+	</File>
+	<File name="tests\tests_square.h" open="0" top="0" tabpos="8">
+		<Cursor position="15" topLine="0" />
+		<BrowseMarks positions="260" />
+	</File>
+	<File name="include\io.h" open="1" top="0" tabpos="5">
+		<Cursor position="854" topLine="0" />
+		<BrowseMarks positions="306,486,1035,1061" />
+	</File>
+	<File name="include\common_library.h" open="1" top="0" tabpos="4">
+		<Cursor position="195" topLine="0" />
+		<BrowseMarks positions="193,216,626,703,733,742" />
+	</File>
+	<File name="source\solve_square.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="1277" topLine="30" />
+		<BrowseMarks positions="2,232,234,323,350,482,513,775,801,838,1284,1369,1752" />
+	</File>
+	<File name="include\solve_square.h" open="1" top="0" tabpos="3">
+		<Cursor position="1096" topLine="0" />
+		<BrowseMarks positions="0,106,719,1096,1098,1391" />
 	</File>
 </BrowseTracker_layout_file>
