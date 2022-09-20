@@ -8,6 +8,10 @@
 #include <math.h>
 #include <cmath>
 
+//#define SOFT_ASSERT
+
+#ifndef SOFT_ASSERT
+
 #define SOFT_ASSERT(condition)                                            \
             do                                                            \
             {                                                             \
@@ -15,5 +19,11 @@
                     printf("Error in %s; file: %s; num of line: %d \n",   \
                            #condition, __FILE__, __LINE__);               \
             } while(false)
+
+#else
+
+#define SOFT_ASSERT(condition)
+
+#endif
 
 #endif // COMMON_LIBRARY_H_INCLUDED

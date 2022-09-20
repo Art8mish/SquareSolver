@@ -8,26 +8,20 @@ int is_zero(double value)
     return (fabs(value) < EPS); // comparison of absolute value with small constant
 }
 
-<<<<<<< HEAD
+
 double removal_minus_zero(double x)
 {
     double answer = (is_zero(fabs(x))) ? 0 : x;
 
     return answer;
-=======
-void removal_minus_zero(double *x1, double *x2)
-{
-    *x1 = (is_zero(fabs(*x1))) ? 0 : *x1;
-    *x2 = (is_zero(fabs(*x2))) ? 0 : *x2;
->>>>>>> fdbb6b433e1965fcbe43d639c8b50a67063b51ac
 }
 
-Num_Roots solve_linear(double b, double c, double *x1)
+Num_Roots solve_linear(double b, double c, double *x)
 {
     SOFT_ASSERT(std::isfinite(b));
     SOFT_ASSERT(std::isfinite(c));
 
-    SOFT_ASSERT(x1 != NULL);
+    SOFT_ASSERT(x != NULL);
 
     if (is_zero(b))
     {
@@ -43,12 +37,10 @@ Num_Roots solve_linear(double b, double c, double *x1)
     // const * x + c = 0
     if (!(is_zero(b)))
     {
-        *x1 = (-c) / b;
+        *x = (-c) / b;
 
         return ONE_SOL;
     }
-
-
 }
 
 Num_Roots solve_square(double a, double b, double c, double *x1, double *x2)
@@ -66,6 +58,14 @@ Num_Roots solve_square(double a, double b, double c, double *x1, double *x2)
     // 0 * x^2 + b * x + c = 0
     if (is_zero(a))
         return solve_linear(b, c, x1);
+
+    if (is_zero(c))
+    {
+        *x1 = 0;
+        solve_linear(a, b, x2);
+
+        return TWO_SOL;
+    }
 
     // D < 0; no solutions
     if (discriminant < 0)

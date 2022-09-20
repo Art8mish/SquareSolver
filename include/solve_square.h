@@ -26,7 +26,7 @@ enum Num_Roots
 
 Num_Roots solve_square(double a, double b, double c, double *x1, double *x2);
 
-Num_Roots solve_linear(double b, double c, double *x1);
+Num_Roots solve_linear(double b, double c, double *x);
 
 
 //--------------------------------------------------
@@ -41,10 +41,17 @@ Num_Roots solve_linear(double b, double c, double *x1);
 
 int is_zero(double value);
 
-<<<<<<< HEAD
+
+//--------------------------------------------------
+//! Return 0 if argument is -0
+//!
+//! @param [in] x Double argument
+//!
+//! @return 0 if argument is -0 and argument if not
+//!
+//! @note If (value is very close to 0) True
+//--------------------------------------------------
+
 double removal_minus_zero(double x);
-=======
-void removal_minus_zero(double *x1, double *x2);
->>>>>>> fdbb6b433e1965fcbe43d639c8b50a67063b51ac
 
 #endif // SOLVE_SQUARE_H_INCLUDED

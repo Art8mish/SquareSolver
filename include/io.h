@@ -23,7 +23,7 @@ void guarded_input(double *a, double *b, double *c);
 //! @param [in] x1 1st solution
 //! @param [in] x2 2nd solution if exist
 //!
-//! @note Function print_solutions takes only (0 <= num_roots <= 3)
+//! @note Function print_solutions takes only (-1 <= num_roots <= 2)
 //------------------------------------------------------------------
 
 void print_solution(Num_Roots num_roots, double x1, double x2);
